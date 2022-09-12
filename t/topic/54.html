@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <title>مشكلة الـ  sleep لايعمل !! - نظام ماك كاتلينا 10.15 (catalina) - مجتمع هاكنتوش بالعربي</title>
+    <meta name="description" content="لدي  الكرت RX 580 والمعالج AMD ryzen والهاكنوش catalina 10.15.1 وحين يتم وضع الجهاز على وضع sleep والانتظار حتى يوقف البور ثم الضغط على الكيبور يفترض ان يعود للشاشة بما فيها من ملفات مفتوحة قبل الوضع لكنه حالياً يقوم بعم&amp;hellip;">
+    <meta name="generator" content="Discourse 2.9.0.beta9 - https://github.com/discourse/discourse version 55ee0c8214f5a2192106bff13f91cb01eef65847">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/15e653e2e36961a8704f34adb05e5f86a033d6ca_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/15e653e2e36961a8704f34adb05e5f86a033d6ca_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="54.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://forum.xn--mgbg4a8cpdl.com","potentialAction":{"@type":"SearchAction","target":"https://forum.xn--mgbg4a8cpdl.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="مجتمع هاكنتوش بالعربي Search">
+
+    <link href="../../stylesheets/color_definitions_scheme__1_208a07ecab29f97a32ef3dc8ad27adbc1e3306f5.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" class="light-scheme"/><link href="../../stylesheets/color_definitions_scheme_1_1_b00aab694063d65b3b10c0a5ff1fa705e866ae60.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="(prefers-color-scheme: dark)" rel="stylesheet" class="dark-scheme"/>
+
+  <link href="../../stylesheets/desktop_rtl_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_rtl"  />
+
+
+
+  <link href="../../stylesheets/discourse-details_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-details"  />
+  <link href="../../stylesheets/discourse-local-dates_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-local-dates"  />
+  <link href="../../stylesheets/discourse-narrative-bot_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-narrative-bot"  />
+  <link href="../../stylesheets/discourse-presence_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-presence"  />
+  <link href="../../stylesheets/lazy-yt_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="lazy-yt"  />
+  <link href="../../stylesheets/poll_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="poll"  />
+  <link href="../../stylesheets/poll_desktop_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="poll_desktop"  />
+
+  <link href="../../stylesheets/desktop_theme_4_aa8c7c4e89f92bec19868ce810f1a13b85f7afcd.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4" data-theme-name="bigger logo"/>
+<link href="../../stylesheets/desktop_theme_16_0e54b1c32ee622cb4e9dac1da6e93d275a5bf661.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="16" data-theme-name="custom font"/>
+<link href="../../stylesheets/desktop_theme_1_bccc67549561a578c38bd0e637225ad927e173a1.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="1" data-theme-name="المبدئي"/>
+
+    
+    
+        <link rel="alternate nofollow" type="application/rss+xml" title="موجز RSS للموضوع &#39;مشكلة الـ  sleep لايعمل !!&#39;" href="54.rss" />
+    <meta property="og:site_name" content="مجتمع هاكنتوش بالعربي" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/7f2d68081dfcc1fdbd7a65ca6adc06b6f1e542a0.jpeg" />
+<meta property="og:image" content="https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/7f2d68081dfcc1fdbd7a65ca6adc06b6f1e542a0.jpeg" />
+<meta property="og:url" content="https://forum.xn--mgbg4a8cpdl.com/t/topic/54" />
+<meta name="twitter:url" content="https://forum.xn--mgbg4a8cpdl.com/t/topic/54" />
+<meta property="og:title" content="مشكلة الـ  sleep لايعمل !!" />
+<meta name="twitter:title" content="مشكلة الـ  sleep لايعمل !!" />
+<meta property="og:description" content="لدي  الكرت RX 580 والمعالج AMD ryzen والهاكنوش catalina 10.15.1 وحين يتم وضع الجهاز على وضع sleep والانتظار حتى يوقف البور ثم الضغط على الكيبور يفترض ان يعود للشاشة بما فيها من ملفات مفتوحة قبل الوضع لكنه حالياً يقوم بعمل تشغيل من جديد يعني باختصار وضع sleep كأنه shutdown ، اللي عنده حل يسعفنا الله يبارك فيكم" />
+<meta name="twitter:description" content="لدي  الكرت RX 580 والمعالج AMD ryzen والهاكنوش catalina 10.15.1 وحين يتم وضع الجهاز على وضع sleep والانتظار حتى يوقف البور ثم الضغط على الكيبور يفترض ان يعود للشاشة بما فيها من ملفات مفتوحة قبل الوضع لكنه حالياً يقوم بعمل تشغيل من جديد يعني باختصار وضع sleep كأنه shutdown ، اللي عنده حل يسعفنا الله يبارك فيكم" />
+<meta property="article:published_time" content="2020-04-10T18:36:00+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    <script async="" defer="" data-domain="forum.xn--mgbg4a8cpdl.com" src="https://pa.fariszr.com/js/pls4.js"></script>
+
+<script async="" defer="" data-name="BMC-Widget" data-cfasync="false" src="../../uploads/default/original/1X/4a02f5ba48f3d1b8cc84b758a45b1d1d31b76c98.js" data-id="arhackintosh" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <header>
+  <a href="../../index.html">
+    <h1>مجتمع هاكنتوش بالعربي</h1>
+  </a>
+</header>
+
+    <div id="main-outlet" class="wrap" role="main">
+        <div id="topic-title">
+    <h1>
+      <a href="54.html">مشكلة الـ  sleep لايعمل !!</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/hackintosh-support/6.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F1592A'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>مساعده الهاكنتوش</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/hackintosh-support/nzam-mak-katlyna-10-15-catalina/15.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #E45735'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>نظام ماك كاتلينا 10.15 (catalina)</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div id='post_1' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T18:36:00Z' class='post-time'>
+                10 أبريل 2020،  6:36م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T18:36:00Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>لدي  الكرت RX 580 والمعالج AMD ryzen والهاكنوش catalina 10.15.1 وحين يتم وضع الجهاز على وضع sleep والانتظار حتى يوقف البور ثم الضغط على الكيبور يفترض ان يعود للشاشة بما فيها من ملفات مفتوحة قبل الوضع لكنه حالياً يقوم بعمل تشغيل من جديد يعني باختصار وضع sleep كأنه shutdown ، اللي عنده حل يسعفنا الله يبارك فيكم</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_2' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T18:41:12Z' class='post-time'>
+                10 أبريل 2020،  6:41م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T18:41:12Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>تعرف انجليزي اخوي ؟</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_3' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T19:38:28Z' class='post-time'>
+                10 أبريل 2020،  7:38م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T19:38:28Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="2" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>تعرف انجليزي اخوي ؟</p>
+</blockquote>
+</aside>
+<p>نعم اخي</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_4' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T19:44:39Z' class='post-time'>
+                10 أبريل 2020،  7:44م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T19:44:39Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="81">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>نعم اخي</p>
+</blockquote>
+</aside>
+<p>[URL unfurl=“true”]<a href="https://github.com/AlGreyy/ryzenusbfix%5B/URL%5D">https://github.com/AlGreyy/ryzenusbfix[/URL]</a>
+جرب هذا</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_5' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T20:16:57Z' class='post-time'>
+                10 أبريل 2020،  8:16م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T20:16:57Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="4" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>[URL unfurl=“true”]<a href="https://github.com/AlGreyy/ryzenusbfix%5B/URL%5D" rel="noopener nofollow ugc">https://github.com/AlGreyy/ryzenusbfix[/URL]</a>
+جرب هذا</p>
+</blockquote>
+</aside>
+<p>استخدمت السكربت كما ترى ولكن للاسف لم يضبط بل اصبح  الجهاز يشتغل تلقائياً بعد ان يطفى البور  ، شكرا لك على كل حال .</p>
+<p>[I] /**</p>
+<ul>
+<li>
+<ul>
+<li>Name: ryzenusbfix</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Info: Script to fix USB ports on ryzen systems</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Auth: XLNC</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Date: 15/08/2018</li>
+</ul>
+</li>
+</ul>
+<p>*/ [/I]</p>
+<p>Starting …</p>
+<p>[RUNNING] Getting files</p>
+<p>[ALERT] Might need internet connection if required files not present on system.</p>
+<p>[RUNNING] Mounting EFI.</p>
+<p>[RUNNING] Detected old USB files in EFI.</p>
+<p>[DELETING] …</p>
+<p>[RUNNING] Extracting DSDT Table.</p>
+<p>[RUNNING] Decompiling DSDT.</p>
+<p>Intel ACPI Component Architecture</p>
+<p>ASL+ Optimizing Compiler/Disassembler version 20180427(RM)</p>
+<p>Copyright (c) 2000 - 2018 Intel Corporation</p>
+<p>Input file /tmp/XLNC/DSDT.aml, Length 0x6BAB (27563) bytes</p>
+<p>ACPI: DSDT 0x0000000000000000 006BAB (v02 ALASKA A M I    01072009 INTL 20160930)</p>
+<p>External object resolution file /tmp/XLNC/SSDT-9-CpuCst.aml</p>
+<p>Input file /tmp/XLNC/SSDT-9-CpuCst.aml, Length 0x133 (307) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 000133 (v01 PmRefA CpuCst   00003000 INTL 20120320)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-8-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-8-A M I.aml, Length 0x13F0 (5104) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 0013F0 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-7-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-7-A M I.aml, Length 0xBF (191) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 0000BF (v01 ALASKA A M I    00001000 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-6-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-6-A M I.aml, Length 0x1EC3 (7875) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 001EC3 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-5-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-5-A M I.aml, Length 0x119C (4508) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 00119C (v01 ALASKA A M I    00000001 AMD  00000001)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-4-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-4-A M I.aml, Length 0x24 (36) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 000024 (v01 ALASKA A M I    00001000 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-3-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-3-A M I.aml, Length 0x5EF8 (24312) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 005EF8 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-2-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-2-A M I.aml, Length 0x3699 (13977) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 003699 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-1-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-1-A M I.aml, Length 0x8C98 (35992) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 008C98 (v02 ALASKA A M I    00000002 MSFT 04000000)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-0-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-0-A M I.aml, Length 0x94 (148) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 000094 (v02 ALASKA A M I    01072009 AMI  01072009)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>Pass 1 parse of [DSDT]</p>
+<p>Pass 2 parse of [DSDT]</p>
+<p>Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)</p>
+<p>Parsing completed</p>
+<p>Found 1 external control methods, reparsing with new information</p>
+<p>Pass 1 parse of [DSDT]</p>
+<p>Pass 2 parse of [DSDT]</p>
+<p>Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)</p>
+<p>Parsing completed</p>
+<p>Disassembly completed</p>
+<p>ASL Output:    /tmp/XLNC/DSDT.dsl - 287254 bytes</p>
+<p>iASL Warning: There were 7 external control methods found during</p>
+<p>disassembly, but only 6 were resolved (1 unresolved). Additional</p>
+<p>ACPI tables may be required to properly disassemble the code. This</p>
+<p>resulting disassembler output file may not compile because the</p>
+<p>disassembler did not know how many arguments to assign to the</p>
+<p>unresolved methods. Note: SSDTs can be dynamically loaded at</p>
+<p>runtime and may or may not be available via the host OS.</p>
+<p>In addition, the -fe option can be used to specify a file containing</p>
+<p>control method external declarations with the associated method</p>
+<p>argument counts. Each line of the file must be of the form:</p>
+<pre><code> External (&lt;method pathname&gt;, MethodObj, &lt;argument count&gt;)
+</code></pre>
+<p>Invocation:</p>
+<pre><code> iasl -fe refs.txt -d dsdt.aml
+</code></pre>
+<p>[ALERT] DSDT decompiled successfully.</p>
+<p>[RUNNING] Patching DSDT Table.</p>
+<p>patch complete: 7 patches, 4 changes, 0 rejects</p>
+<p>patched result written to ‘/tmp/XLNC/PATCHED.dsl’</p>
+<p>[ALERT] Patched DSDT generated successfully.</p>
+<p>Intel ACPI Component Architecture</p>
+<p>ASL+ Optimizing Compiler/Disassembler version 20180427(RM)</p>
+<p>Copyright (c) 2000 - 2018 Intel Corporation</p>
+<p>ASL Input:     /tmp/XLNC/PATCHED.dsl - 8101 lines, 260001 bytes, 2763 keywords</p>
+<p>AML Output:    /tmp/XLNC/PATCHED.aml - 26001 bytes, 963 named objects, 1800 executable opcodes</p>
+<p>Compilation complete. 0 Errors, 17 Warnings, 66 Remarks, 140 Optimizations</p>
+<p>[ALERT] config.plist backup created successfully</p>
+<p>[RUNNING] Patching config.plist</p>
+<p>[ALERT] Patching completed successfully, Please reboot the system !</p>
+<p>[ALERT] You might also need to un-plug and re-plug all your USB devices.</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_6' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T20:25:17Z' class='post-time'>
+                10 أبريل 2020،  8:25م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T20:25:17Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="83">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>استخدمت السكربت كما ترى ولكن للاسف لم يضبط بل اصبح  الجهاز يشتغل تلقائياً بعد ان يطفى البور  ، شكرا لك على كل حال .</p>
+<p>[I] /**</p>
+<ul>
+<li>
+<ul>
+<li>Name: ryzenusbfix</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Info: Script to fix USB ports on ryzen systems</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Auth: XLNC</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Date: 15/08/2018</li>
+</ul>
+</li>
+</ul>
+<p>*/ [/I]</p>
+<p>Starting …</p>
+<p>[RUNNING] Getting files</p>
+<p>[ALERT] Might need internet connection if required files not present on system.</p>
+<p>[RUNNING] Mounting EFI.</p>
+<p>[RUNNING] Detected old USB files in EFI.</p>
+<p>[DELETING] …</p>
+<p>[RUNNING] Extracting DSDT Table.</p>
+<p>[RUNNING] Decompiling DSDT.</p>
+<p>Intel ACPI Component Architecture</p>
+<p>ASL+ Optimizing Compiler/Disassembler version 20180427(RM)</p>
+<p>Copyright (c) 2000 - 2018 Intel Corporation</p>
+<p>Input file /tmp/XLNC/DSDT.aml, Length 0x6BAB (27563) bytes</p>
+<p>ACPI: DSDT 0x0000000000000000 006BAB (v02 ALASKA A M I    01072009 INTL 20160930)</p>
+<p>External object resolution file /tmp/XLNC/SSDT-9-CpuCst.aml</p>
+<p>Input file /tmp/XLNC/SSDT-9-CpuCst.aml, Length 0x133 (307) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 000133 (v01 PmRefA CpuCst   00003000 INTL 20120320)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-8-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-8-A M I.aml, Length 0x13F0 (5104) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 0013F0 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-7-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-7-A M I.aml, Length 0xBF (191) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 0000BF (v01 ALASKA A M I    00001000 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-6-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-6-A M I.aml, Length 0x1EC3 (7875) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 001EC3 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-5-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-5-A M I.aml, Length 0x119C (4508) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 00119C (v01 ALASKA A M I    00000001 AMD  00000001)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-4-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-4-A M I.aml, Length 0x24 (36) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 000024 (v01 ALASKA A M I    00001000 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-3-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-3-A M I.aml, Length 0x5EF8 (24312) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 005EF8 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-2-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-2-A M I.aml, Length 0x3699 (13977) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 003699 (v01 ALASKA A M I    00000001 INTL 20160930)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-1-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-1-A M I.aml, Length 0x8C98 (35992) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 008C98 (v02 ALASKA A M I    00000002 MSFT 04000000)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>External object resolution file /tmp/XLNC/SSDT-0-A M I.aml</p>
+<p>Input file /tmp/XLNC/SSDT-0-A M I.aml, Length 0x94 (148) bytes</p>
+<p>ACPI: SSDT 0x0000000000000000 000094 (v02 ALASKA A M I    01072009 AMI  01072009)</p>
+<p>Pass 1 parse of [SSDT]</p>
+<p>Pass 2 parse of [SSDT]</p>
+<p>Pass 1 parse of [DSDT]</p>
+<p>Pass 2 parse of [DSDT]</p>
+<p>Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)</p>
+<p>Parsing completed</p>
+<p>Found 1 external control methods, reparsing with new information</p>
+<p>Pass 1 parse of [DSDT]</p>
+<p>Pass 2 parse of [DSDT]</p>
+<p>Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)</p>
+<p>Parsing completed</p>
+<p>Disassembly completed</p>
+<p>ASL Output:    /tmp/XLNC/DSDT.dsl - 287254 bytes</p>
+<p>iASL Warning: There were 7 external control methods found during</p>
+<p>disassembly, but only 6 were resolved (1 unresolved). Additional</p>
+<p>ACPI tables may be required to properly disassemble the code. This</p>
+<p>resulting disassembler output file may not compile because the</p>
+<p>disassembler did not know how many arguments to assign to the</p>
+<p>unresolved methods. Note: SSDTs can be dynamically loaded at</p>
+<p>runtime and may or may not be available via the host OS.</p>
+<p>In addition, the -fe option can be used to specify a file containing</p>
+<p>control method external declarations with the associated method</p>
+<p>argument counts. Each line of the file must be of the form:</p>
+<pre><code> External (&lt;method pathname&gt;, MethodObj, &lt;argument count&gt;)
+</code></pre>
+<p>Invocation:</p>
+<pre><code> iasl -fe refs.txt -d dsdt.aml
+</code></pre>
+<p>[ALERT] DSDT decompiled successfully.</p>
+<p>[RUNNING] Patching DSDT Table.</p>
+<p>patch complete: 7 patches, 4 changes, 0 rejects</p>
+<p>patched result written to ‘/tmp/XLNC/PATCHED.dsl’</p>
+<p>[ALERT] Patched DSDT generated successfully.</p>
+<p>Intel ACPI Component Architecture</p>
+<p>ASL+ Optimizing Compiler/Disassembler version 20180427(RM)</p>
+<p>Copyright (c) 2000 - 2018 Intel Corporation</p>
+<p>ASL Input:     /tmp/XLNC/PATCHED.dsl - 8101 lines, 260001 bytes, 2763 keywords</p>
+<p>AML Output:    /tmp/XLNC/PATCHED.aml - 26001 bytes, 963 named objects, 1800 executable opcodes</p>
+<p>Compilation complete. 0 Errors, 17 Warnings, 66 Remarks, 140 Optimizations</p>
+<p>[ALERT] config.plist backup created successfully</p>
+<p>[RUNNING] Patching config.plist</p>
+<p>[ALERT] Patching completed successfully, Please reboot the system !</p>
+<p>[ALERT] You might also need to un-plug and re-plug all your USB devices.</p>
+</blockquote>
+</aside>
+<p>للاسف معظم حلول amdosx تعتمد على اوبن كور + انت عندك المشكله اهون على الاقل الناس عندهم الجهاز يسوي KP على كل حال مع اصدار الماك الجديد على الاغلب راح نحول على اوبن كور لانه فعلا الجميع بدا يهجرو كلوفر</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_7' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T20:27:44Z' class='post-time'>
+                10 أبريل 2020،  8:27م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T20:27:44Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="6" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>للاسف معظم حلول amdosx تعتمد على اوبن كور + انت عندك المشكله اهون على الاقل الناس عندهم الجهاز يسوي KP على كل حال مع اصدار الماك الجديد على الاغلب راح نحول على اوبن كور لانه فعلا الجميع بدا يهجرو كلوفر</p>
+</blockquote>
+</aside>
+<p>فعلاً ، يعطيك العافية</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_8' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T21:43:56Z' class='post-time'>
+                10 أبريل 2020،  9:43م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T21:43:56Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="85">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>فعلاً ، يعطيك العافية</p>
+</blockquote>
+</aside>
+<p>جرب هذا الكيكست</p>
+<p>[URL unfurl=“true”]<a href="https://github.com/acidanthera/RTCMemoryFixup/releases%5B/URL%5D">https://github.com/acidanthera/RTCMemoryFixup/releases[/URL]</a></p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_9' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-11T14:49:08Z' class='post-time'>
+                11 أبريل 2020،  2:49م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-11T14:49:08Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="8" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>جرب هذا الكيكست</p>
+<p>[URL unfurl=“true”]<a href="https://github.com/acidanthera/RTCMemoryFixup/releases%5B/URL%5D" rel="noopener nofollow ugc">https://github.com/acidanthera/RTCMemoryFixup/releases[/URL]</a></p>
+</blockquote>
+</aside>
+<p>جربت وللأسف مازال الحال كما هو عليه ، هل لكون الجهاز عندي فيه هاردسكين واحد للويندوز والآخر للهاكنتوش له علاقة بالموضوع وهل يمكن ايضاً ان تكون اعدادت البايوس لها دور ؟</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_10' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-11T20:13:47Z' class='post-time'>
+                11 أبريل 2020،  8:13م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-11T20:13:47Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="88">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>جربت وللأسف مازال الحال كما هو عليه ، هل لكون الجهاز عندي فيه هاردسكين واحد للويندوز والآخر للهاكنتوش له علاقة بالموضوع وهل يمكن ايضاً ان تكون اعدادت البايوس لها دور ؟</p>
+</blockquote>
+</aside>
+<p>نعم اكيد اعدادات البايوس مهمه</p>
+<p>جرب هذا
+[URL unfurl=“true”]<a href="https://hackintosher.com/guides/stop-macos-from-freezing-on-sleep-wake-with-a-catalina-hackintosh/%5B/URL%5D" class="inline-onebox">Loading...</a></p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_11' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-11T21:28:12Z' class='post-time'>
+                11 أبريل 2020،  9:28م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-11T21:28:12Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="10" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>نعم اكيد اعدادات البايوس مهمه</p>
+<p>جرب هذا
+[URL unfurl=“true”]<a href="https://hackintosher.com/guides/stop-macos-from-freezing-on-sleep-wake-with-a-catalina-hackintosh/%5B/URL%5D" class="inline-onebox" rel="noopener nofollow ugc">Loading...</a></p>
+</blockquote>
+</aside>
+<p>سوف اجرب الطريقة وأوافيك بالنتيجة ، شكرا لك ايها الشهم</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_12' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-11T22:23:06Z' class='post-time'>
+                11 أبريل 2020، 10:23م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-11T22:23:06Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>طبقت التعليمات حرفيا لكن دون فائدة لم يتغير شيء</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_13' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-12T04:13:14Z' class='post-time'>
+                12 أبريل 2020،  4:13ص
+              </time>
+              <meta itemprop='dateModified' content='2020-04-12T04:13:14Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="91">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>طبقت التعليمات حرفيا لكن دون فائدة لم يتغير شيء</p>
+</blockquote>
+</aside>
+<p>والله غريبه مشكلتك مالي ملاقي لها حل</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_14' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-12T10:23:21Z' class='post-time'>
+                12 أبريل 2020، 10:23ص
+              </time>
+              <meta itemprop='dateModified' content='2020-04-12T10:23:21Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="13" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>والله غريبه مشكلتك مالي ملاقي لها حل</p>
+</blockquote>
+</aside>
+<p>هذه المشكلة ايضا حدثت مع نسخة Mojave حين ثبتها ، وأظن ان المشكلة ليس لها علاقة بنظام الهاكنتوش ، اظن والله اعلم ان كرت الشاشة والهاردسك واعدادات البايوس هي المشكلة وسأستبعد البايوس لاني عملت كل الاعدادات الضرورية وقمت بتجربة كل الاعدادات</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_15' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-12T22:32:57Z' class='post-time'>
+                12 أبريل 2020، 10:32م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-12T22:32:57Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="93">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>هذه المشكلة ايضا حدثت مع نسخة Mojave حين ثبتها ، وأظن ان المشكلة ليس لها علاقة بنظام الهاكنتوش ، اظن والله اعلم ان كرت الشاشة والهاردسك واعدادات البايوس هي المشكلة وسأستبعد البايوس لاني عملت كل الاعدادات الضرورية وقمت بتجربة كل الاعدادات</p>
+</blockquote>
+</aside>
+<p>لاكذا فيها شي لان الكلام على انترنت ان المشكله بدت مع كاتلينا فا اذا كانت موجوده في موهافي اذا مشكله ثانيه
+النقطه ما نقدر نسئل AmdOSX عن المشكله لانهم انهو دعم كلوفر بشكل نهائي</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_16' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-13T22:20:29Z' class='post-time'>
+                13 أبريل 2020، 10:20م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-13T22:20:29Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="15" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>لاكذا فيها شي لان الكلام على انترنت ان المشكله بدت مع كاتلينا فا اذا كانت موجوده في موهافي اذا مشكله ثانيه
+النقطه ما نقدر نسئل AmdOSX عن المشكله لانهم انهو دعم كلوفر بشكل نهائي</p>
+</blockquote>
+</aside>
+<p>الف شكر اخي الكريم على متابعتك ، للتو انتهيت من تحميل نسخة 10.15.4 مع الملفات اللازمة وقمت بنسخها حسب الشرح الذي وضعته في المنتدى الا انه لم يقلع النظام توقف على شعار التفاحه استخدمت ملف config الذي كان يقلع معه النظام بسؤاله ولكن مع هذه النسخة فشل لا اعلم مالمشكلة هل هو ملف config.plis ام هي مشكلة الكيكست ، يبدو ان مافيه نصيب مع الهاكنتوش <img src="../../images/emoji/apple/frowning.png%3Fv=12" title=":frowning:" class="emoji" alt=":frowning:" loading="lazy" width="20" height="20"></p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_17' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-13T22:39:29Z' class='post-time'>
+                13 أبريل 2020، 10:39م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-13T22:39:29Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="96">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>الف شكر اخي الكريم على متابعتك ، للتو انتهيت من تحميل نسخة 10.15.4 مع الملفات اللازمة وقمت بنسخها حسب الشرح الذي وضعته في المنتدى الا انه لم يقلع النظام توقف على شعار التفاحه استخدمت ملف config الذي كان يقلع معه النظام بسؤاله ولكن مع هذه النسخة فشل لا اعلم مالمشكلة هل هو ملف config.plis ام هي مشكلة الكيكست ، يبدو ان مافيه نصيب مع الهاكنتوش <img src="../../images/emoji/apple/frowning.png%3Fv=12" title=":frowning:" class="emoji" alt=":frowning:" loading="lazy" width="20" height="20"></p>
+</blockquote>
+</aside>
+<p>يخوي انا قلت لك مكتوب في الشرح الخاص بمعالجات AMD انه اخر اصدار مدعوم هو 10.15.1 لا تحدث بعده ابدا الان راح تضطر تفرمت</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_18' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/d2c139f724de110e5dab30de5d2a8e7434d76f10.jpeg">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-14T17:11:20Z' class='post-time'>
+                14 أبريل 2020،  5:11م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-14T17:11:20Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="17" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>يخوي انا قلت لك مكتوب في الشرح الخاص بمعالجات AMD انه اخر اصدار مدعوم هو 10.15.1 لا تحدث بعده ابدا الان راح تضطر تفرمت</p>
+</blockquote>
+</aside>
+<p>اهلا بك ، انا ما حدثت لكن حاولت تحميل نسخة جديدة وتثبيتها بدل الحالية ولكن لم انتبه للرابط الذي وضعته على onedrive والذي يخص معالجات AMD  ، سأقوم بتحميله ، لكن هل تتوقع أن يحل المشاكل مثل sleep و تبيت برامج adobe ، وما رأيك في التثبيت عن طريق recovery  للنسخة 10.15.4 لمعالجات AMD كما هو موضح على الفيديو التالي :</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://www.youtube.com/watch?v=QtvDRDqgolc:270">
+  <header class="source">
+      <img src="../../uploads/default/original/1X/e4ae97797627419338bb3d337d28e766e7e7c9d1.png" class="site-icon" width="16" height="16">
+
+      <a href="https://www.youtube.com/watch?v=QtvDRDqgolc:270" target="_blank" rel="noopener nofollow ugc">YouTube</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:480/360;"><img src="../../uploads/default/original/1X/d2c139f724de110e5dab30de5d2a8e7434d76f10.jpeg" class="thumbnail" width="480" height="360"></div>
+
+<h3><a href="https://www.youtube.com/watch?v=QtvDRDqgolc:270" target="_blank" rel="noopener nofollow ugc">AMD Ryzentosh MacOS Catalina 10.15.4 OpenCore 0.5.6 Easiest Full Installation...</a></h3>
+
+  <p>AMD Ryzentosh 7.0 MacOS Catalina 10.15.4 OpenCore 0.5.6 easiest step by step full installation guide. Please don't forget to like and subscribe. Thanks for w...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>وشكراً لك استاذ فارس  على تحملك وسعة صدرك على تسائلاتنا لعدم معرفتنا ببعض الأمور في هذا النظام كونه جديد على الساحة على الأقل بالنسبة لي .</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_19' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-14T17:15:44Z' class='post-time'>
+                14 أبريل 2020،  5:15م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-14T17:15:44Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="مواطن" data-post="98">
+<div class="title">
+<div class="quote-controls"></div>
+</div>
+<blockquote>
+<p>اهلا بك ، انا ما حدثت لكن حاولت تحميل نسخة جديدة وتثبيتها بدل الحالية ولكن لم انتبه للرابط الذي وضعته على onedrive والذي يخص معالجات AMD  ، سأقوم بتحميله ، لكن هل تتوقع أن يحل المشاكل مثل sleep و تبيت برامج adobe ، وما رأيك في التثبيت عن طريق recovery  للنسخة 10.15.4 لمعالجات AMD كما هو موضح على الفيديو التالي :</p>
+<p><a href="https://www.youtube.com/watch?v=QtvDRDqgolc:270" class="inline-onebox">AMD Ryzentosh MacOS Catalina 10.15.4 OpenCore 0.5.6 Easiest Full Installation Guide (Ryzentosh 7.0) - YouTube</a></p>
+<p>وشكراً لك استاذ فارس  على تحملك وسعة صدرك على تسائلاتنا لعدم معرفتنا ببعض الأمور في هذا النظام كونه جديد على الساحة على الأقل بالنسبة لي .</p>
+</blockquote>
+</aside>
+<p>لا عادي بس الطريقه الي ارسلتها تعتمد على اوبن وغير الشرح
+نعم اذا استخدمت اوبن كور راح يدعم اي اصدار و يمكن يحل مشكله السليب لاكن شرح هاكنتوش بالعربي ما يدعم اوبن كور + انا خبرتي فيه قليله اذا تبي تكمل مع الشرح انتقل لقسم اوبن كور
+اما الكلوفر اخر اصدار مدعوم له 10.15.1
+انشاء الله مع اصدار الماك القادم بينزل اصدار v2 من الشرح مع اوبن كور لكن حاليا الشرح يعتمد على كلوفر</p>
+<p>اعاده التثبيت المفروض ما تفرق لاكن جرب
+مشكله برامج ادوبي هي على الاغلب من الباتشات له كم حل لاكن برنامجك مالقيت له</p>
+<p>يمكن لو سويت بوست على amdosx يعطوك الحل(اكتب انه كلوفر وانك بس تبي حل ل ادوبي مب حل للنظام لانهم وقفو دعم كلوفر)</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_20' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon63478633.html'><span itemprop='name'>anon63478633</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="54.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-14T17:25:20Z' class='post-time'>
+                14 أبريل 2020،  5:25م
+              </time>
+              <meta itemprop='dateModified' content='2020-04-14T17:25:20Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="19" data-topic="54">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>لا عادي بس الطريقه الي ارسلتها تعتمد على اوبن وغير الشرح
+نعم اذا استخدمت اوبن كور راح يدعم اي اصدار و يمكن يحل مشكله السليب لاكن شرح هاكنتوش بالعربي ما يدعم اوبن كور + انا خبرتي فيه قليله اذا تبي تكمل مع الشرح انتقل لقسم اوبن كور
+اما الكلوفر اخر اصدار مدعوم له 10.15.1
+انشاء الله مع اصدار الماك القادم بينزل اصدار v2 من الشرح مع اوبن كور لكن حاليا الشرح يعتمد على كلوفر</p>
+<p>اعاده التثبيت المفروض ما تفرق لاكن جرب
+مشكله برامج ادوبي هي على الاغلب من الباتشات له كم حل لاكن برنامجك مالقيت له</p>
+<p>يمكن لو سويت بوست على amdosx يعطوك الحل(اكتب انه كلوفر وانك بس تبي حل ل ادوبي مب حل للنظام لانهم وقفو دعم كلوفر)</p>
+</blockquote>
+</aside>
+<p>تحياتي لك</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة الـ  sleep لايعمل !!'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+  <nav class='crawler-nav'>
+    <ul>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../index.html' itemprop="url">الصفحة الرئيسية </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../categories.html' itemprop="url">الفئات </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../guidelines.html' itemprop="url">الأسئلة الشائعة/الإرشادات </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../tos.html' itemprop="url">شروط الخدمة </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../privacy.html' itemprop="url">سياسة الخصوصية </a>
+        </span>
+      </li>
+    </ul>
+  </nav>
+  <p class='powered-by-link'>بدعم من <a href="http://www.discourse.org">Discourse</a>، يُفضَّل عرضه مع تفعيل JavaScript</p>
+</footer>
+
+    
+    
+  </body>
+  
+</html>

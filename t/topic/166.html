@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <title>مشكلة pci configration end, bridges 4, devices22 عند التنصيب - نظام ماك بيق سر 11 (Big Sur) - مجتمع هاكنتوش بالعربي</title>
+    <meta name="description" content="مشكلة pci configration end, bridges 4, devices22 عند التنصيب">
+    <meta name="generator" content="Discourse 2.9.0.beta9 - https://github.com/discourse/discourse version 55ee0c8214f5a2192106bff13f91cb01eef65847">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/15e653e2e36961a8704f34adb05e5f86a033d6ca_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/15e653e2e36961a8704f34adb05e5f86a033d6ca_2_180x180.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="166.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://forum.xn--mgbg4a8cpdl.com","potentialAction":{"@type":"SearchAction","target":"https://forum.xn--mgbg4a8cpdl.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="مجتمع هاكنتوش بالعربي Search">
+
+    <link href="../../stylesheets/color_definitions_scheme__1_208a07ecab29f97a32ef3dc8ad27adbc1e3306f5.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" class="light-scheme"/><link href="../../stylesheets/color_definitions_scheme_1_1_b00aab694063d65b3b10c0a5ff1fa705e866ae60.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="(prefers-color-scheme: dark)" rel="stylesheet" class="dark-scheme"/>
+
+  <link href="../../stylesheets/desktop_rtl_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_rtl"  />
+
+
+
+  <link href="../../stylesheets/discourse-details_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-details"  />
+  <link href="../../stylesheets/discourse-local-dates_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-local-dates"  />
+  <link href="../../stylesheets/discourse-narrative-bot_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-narrative-bot"  />
+  <link href="../../stylesheets/discourse-presence_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="discourse-presence"  />
+  <link href="../../stylesheets/lazy-yt_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="lazy-yt"  />
+  <link href="../../stylesheets/poll_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="poll"  />
+  <link href="../../stylesheets/poll_desktop_9b491d17518a16e6379e096522b3d5d7faec8322.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="poll_desktop"  />
+
+  <link href="../../stylesheets/desktop_theme_4_aa8c7c4e89f92bec19868ce810f1a13b85f7afcd.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="4" data-theme-name="bigger logo"/>
+<link href="../../stylesheets/desktop_theme_16_0e54b1c32ee622cb4e9dac1da6e93d275a5bf661.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="16" data-theme-name="custom font"/>
+<link href="../../stylesheets/desktop_theme_1_bccc67549561a578c38bd0e637225ad927e173a1.css%3F__ws=local.xn--mgbg4a8cpdl.com.css" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="1" data-theme-name="المبدئي"/>
+
+    
+    
+        <link rel="alternate nofollow" type="application/rss+xml" title="موجز RSS للموضوع &#39;مشكلة pci configration end, bridges 4, devices22 عند التنصيب&#39;" href="166.rss" />
+    <meta property="og:site_name" content="مجتمع هاكنتوش بالعربي" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/7f2d68081dfcc1fdbd7a65ca6adc06b6f1e542a0.jpeg" />
+<meta property="og:image" content="https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/7f2d68081dfcc1fdbd7a65ca6adc06b6f1e542a0.jpeg" />
+<meta property="og:url" content="https://forum.xn--mgbg4a8cpdl.com/t/topic/166" />
+<meta name="twitter:url" content="https://forum.xn--mgbg4a8cpdl.com/t/topic/166" />
+<meta property="og:title" content="مشكلة pci configration end, bridges 4, devices22 عند التنصيب" />
+<meta name="twitter:title" content="مشكلة pci configration end, bridges 4, devices22 عند التنصيب" />
+<meta property="og:description" content="مشكلة pci configration end, bridges 4, devices22 عند التنصيب" />
+<meta name="twitter:description" content="مشكلة pci configration end, bridges 4, devices22 عند التنصيب" />
+<meta property="article:published_time" content="2021-04-25T19:35:34+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    
+  </head>
+  <body class="crawler">
+    <script async="" defer="" data-domain="forum.xn--mgbg4a8cpdl.com" src="https://pa.fariszr.com/js/pls4.js"></script>
+
+<script async="" defer="" data-name="BMC-Widget" data-cfasync="false" src="../../uploads/default/original/1X/4a02f5ba48f3d1b8cc84b758a45b1d1d31b76c98.js" data-id="arhackintosh" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <header>
+  <a href="../../index.html">
+    <h1>مجتمع هاكنتوش بالعربي</h1>
+  </a>
+</header>
+
+    <div id="main-outlet" class="wrap" role="main">
+        <div id="topic-title">
+    <h1>
+      <a href="166.html">مشكلة pci configration end, bridges 4, devices22 عند التنصيب</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/hackintosh-support/6.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F1592A'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>مساعده الهاكنتوش</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/hackintosh-support/nzam-mak-byq-sr-11-big-sur/14.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F7941D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>نظام ماك بيق سر 11 (Big Sur)</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div id='post_1' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon28291859.html'><span itemprop='name'>anon28291859</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-25T19:35:34Z' class='post-time'>
+                25 أبريل 2021،  7:35م
+              </time>
+              <meta itemprop='dateModified' content='2021-04-25T19:35:34Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>مشكلة pci configration end, bridges 4, devices22 عند التنصيب</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_2' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-25T19:42:27Z' class='post-time'>
+                25 أبريل 2021،  7:42م
+              </time>
+              <meta itemprop='dateModified' content='2021-04-25T19:42:27Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>اصدار النظام
+صور للكيكستات
+صور لملفات ال acpi
+اختبار الكونفق كان صحيح ؟
+هل اتبعت شرحنا ؟</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_3' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon28291859.html'><span itemprop='name'>anon28291859</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-25T20:07:21Z' class='post-time'>
+                25 أبريل 2021،  8:07م
+              </time>
+              <meta itemprop='dateModified' content='2021-04-25T20:07:21Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>اتبعت الشرح بالفعل وتم حل المشكلة ولكن ظهرت مشكلة اخرى فى البيج سير ARhackintosh(BS11.2.3)
+[SIZE=7]<span class="bbcode-b">in memory panic stackshot succeeded</span>[/SIZE]
+[ATTACH type=“full”]86[/ATTACH]</p>
+<p>[ATTACH type=“full”]87[/ATTACH]</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_4' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T00:03:11Z' class='post-time'>
+                28 أبريل 2021، 12:03ص
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T00:03:11Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-username="anon28291859" data-post="3" data-topic="166">
+<div class="title">
+<div class="quote-controls"></div>
+<img loading="lazy" alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/a/ac91a4/40.png" class="avatar"> anon28291859:</div>
+<blockquote>
+<p>اتبعت الشرح بالفعل وتم حل المشكلة ولكن ظهرت مشكلة اخرى فى البيج سير ARhackintosh(BS11.2.3)
+[SIZE=7]<span class="bbcode-b">in memory panic stackshot succeeded</span>[/SIZE]
+[ATTACH type=“full” alt=“1619381157532.png”]86[/ATTACH]</p>
+<p>[ATTACH type=“full” alt=“1619381179577.png”]87[/ATTACH]</p>
+</blockquote>
+</aside>
+<p>اخي يفضل عمل موضوع منفصل مخصص للمشكله الجديده مع صوره للمشكله</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_5' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon28291859.html'><span itemprop='name'>anon28291859</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T00:05:23Z' class='post-time'>
+                28 أبريل 2021، 12:05ص
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T00:05:23Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="4" data-topic="166">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>اخي يفضل عمل موضوع منفصل مخصص للمشكله الجديده مع صوره للمشكله</p>
+</blockquote>
+</aside>
+<p>نزلت البيج سير بالفعل واشتغل بس عن طريق اوبن كور على لاب توب lenovo legion 5</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div id='post_6' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon28291859.html'><span itemprop='name'>anon28291859</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T00:06:33Z' class='post-time'>
+                28 أبريل 2021، 12:06ص
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T00:06:33Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>المشكلة الفيجا النفيديا مش متعرفة gtx1660ti شغال على الانتل</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_7' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T00:12:58Z' class='post-time'>
+                28 أبريل 2021، 12:12ص
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T00:12:58Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="anon28291859" data-post="6" data-topic="166">
+<div class="title">
+<div class="quote-controls"></div>
+<img loading="lazy" alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/a/ac91a4/40.png" class="avatar"> anon28291859:</div>
+<blockquote>
+<p>المشكلة الفيجا النفيديا مش متعرفة gtx1660ti شغال على الانتل</p>
+</blockquote>
+</aside>
+<p>نعم اخي هذا طبيبعي لانه لاندعم الكروت المنفصله في الهاكنتوش على الابتوبات</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_8' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/anon28291859.html'><span itemprop='name'>anon28291859</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T00:14:23Z' class='post-time'>
+                28 أبريل 2021، 12:14ص
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T00:14:23Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="Fareszr" data-post="7" data-topic="166">
+<div class="title">
+<div class="quote-controls"></div>
+ Fareszr:</div>
+<blockquote>
+<p>نعم اخي هذا طبيبعي لانه لاندعم الكروت المنفصله في الهاكنتوش على الابتوبات</p>
+</blockquote>
+</aside>
+<p>تمام بس بطئ فى لاج كتير مش سلس هل فى تعريفات غلط والتاتش باد مش شغالة</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div id='post_9' itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='هاكنتوش بالعربي'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='https://forum.xn--mgbg4a8cpdl.com/uploads/default/original/1X/702e7fe3e1a0beeff1b31d7c10ca2806109e1df1.png'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Admin.html'><span itemprop='name'>Admin</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="166.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2021-04-28T00:15:25Z' class='post-time'>
+                28 أبريل 2021، 12:15ص
+              </time>
+              <meta itemprop='dateModified' content='2021-04-28T00:15:25Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="anon28291859" data-post="8" data-topic="166">
+<div class="title">
+<div class="quote-controls"></div>
+<img loading="lazy" alt="" width="20" height="20" src="../../letter_avatar_proxy/v4/letter/a/ac91a4/40.png" class="avatar"> anon28291859:</div>
+<blockquote>
+<p>تمام بس بطئ فى لاج كتير مش سلس هل فى تعريفات غلط والتاتش باد مش شغالة</p>
+</blockquote>
+</aside>
+<p>هناك شيء غلط على الاغلب
+ارجو فتح موضوع منفصل لان خرجنا عن نطاق الموضوع الاساسي</p>
+        </div>
+
+        <meta itemprop='headline' content='مشكلة pci configration end, bridges 4, devices22 عند التنصيب'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+  <nav class='crawler-nav'>
+    <ul>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../index.html' itemprop="url">الصفحة الرئيسية </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../categories.html' itemprop="url">الفئات </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../guidelines.html' itemprop="url">الأسئلة الشائعة/الإرشادات </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../tos.html' itemprop="url">شروط الخدمة </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='../../privacy.html' itemprop="url">سياسة الخصوصية </a>
+        </span>
+      </li>
+    </ul>
+  </nav>
+  <p class='powered-by-link'>بدعم من <a href="http://www.discourse.org">Discourse</a>، يُفضَّل عرضه مع تفعيل JavaScript</p>
+</footer>
+
+    
+    
+  </body>
+  
+</html>
